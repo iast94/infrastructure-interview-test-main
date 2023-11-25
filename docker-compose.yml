@@ -1,0 +1,29 @@
+version: '3'
+
+#networks:
+#  app_net:
+ #   driver: bridge 
+
+services: 
+  app: 
+    image: igor1945/app:v1
+    ports: 
+      - '3000:3000'
+    environment:
+      TYPEORM_HOST: db
+    depends_on:
+      - "db"
+  #  networks:
+   #   - app_net
+  db:
+    image: mariadb:5.5
+    restart: always
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: test
+    #networks:
+     # - app_net
+    ports: 
+      - '3306:3306'
