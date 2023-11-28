@@ -1,0 +1,11 @@
+mariadb: 
+  tag: 5.5
+  credentials:
+    dbName: test
+    userName: test
+    userPwd: test
+    rootPwd: test
+web:
+  image: igor1945/app
+  tag: v1
+  serviceType: LoadBalancer

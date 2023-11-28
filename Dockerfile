@@ -10,7 +10,6 @@ RUN yarn install
 # Copy source files
 COPY . . 
 
-# run
+# Start the app
 EXPOSE 3000
-CMD ["yarn", "typeorm", "migration:run"]
-CMD ["yarn", "start"] 
+CMD ["yarn", "start"]
