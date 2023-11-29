@@ -1,3 +1,20 @@
+#Requirements
+docker
+Kubernetes v1.19+
+Terraform
+helm
+Generate access token in the clouder provider
+authenticate access token
+k3d
+
+#create cluster
+terraform int
+terraform plan
+terraform apply
+
+download config file
+copy config file to ~/.kube/config
+
 #install nginx controller
 helm upgrade --install ingress-nginx ingress-nginx \
   --repo https://kubernetes.github.io/ingress-nginx \
