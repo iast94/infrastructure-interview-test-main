@@ -1,14 +1,14 @@
 FROM node:alpine
 
 # Create app directory
-WORKDIR /app
+WORKDIR /web
 
 # Install app dependencies
-COPY package.json yarn.lock ./
+COPY ./app/package.json ./app/yarn.lock ./
 RUN yarn install
 
 # Copy source files
-COPY . . 
+COPY ./app/. . 
 
 # Start the app
 EXPOSE 3000

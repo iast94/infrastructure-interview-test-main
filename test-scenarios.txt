@@ -1,14 +1,11 @@
 #Functional Testing Scenarios:
 
 -Verify that the application launches successfully after deployment.
--Test user authentication: Ensure users can log in and access their accounts.
--Check functionality of critical features (e.g., submitting forms, making API requests, etc.).
--Validate error handling: Test how the application handles unexpected errors or invalid inputs.
+-Check functionality of features (GET, POST).
 
 
 #Performance Testing Scenarios:
 
--Test application performance under different load conditions (low, moderate, high) to ensure scalability.
--Measure response times for various API endpoints under different loads.
+-Measure response times under different loads.
 -Check the application's resource utilization (CPU, memory) during peak loads.
 -Assess the application's ability to handle concurrent users.

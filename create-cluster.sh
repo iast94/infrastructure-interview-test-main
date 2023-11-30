@@ -4,6 +4,6 @@
 k3d cluster create mycluster
 
 # Create a remote environment
-terraform init 
-terraform plan 
-terraform apply -auto-approve
+terraform -chdir=./terraform/ init 
+terraform -chdir=./terraform/ plan 
+terraform -chdir=./terraform/ apply -auto-approve

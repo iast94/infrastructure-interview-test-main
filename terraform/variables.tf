@@ -1,6 +1,6 @@
 # Personal Access Token required to execute the script
 variable "do_token" {
-  default = "dop_v1_50c544689d72bb1958958c48deede9917546136a887577a7dd165e3ddb3df7a4"
+  default = "dop_v1_24e553ac3fc94af8f7b09577050fe631da5d37246821ddbaf4f3aac10b87623c"
 }
 
 # doctl k8s options regions
