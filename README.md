@@ -11,7 +11,7 @@ The goal of this test is to "containerize" a sample application and write the ne
 - helm
 - k3d
 - Generate access token in the clouder provider
-- Copy de acecess token to variables.tf
+- Copy de access token to variables.tf
 
 ## 🚀 Installation
 
