@@ -15,7 +15,8 @@ The goal of this test is to "containerize" a sample application and write the ne
 
 ## 🚀 Installation
 
-If you want to create your own application container image and push it on Docker Hub, use the following script: 
+If you want to create your own application container image and push it on Docker Hub, use the following script:
+
 *Replace the "username" field in the script file with your Docker Hub username.
 
 ```bash
