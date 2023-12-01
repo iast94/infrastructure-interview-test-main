@@ -1,6 +1,6 @@
 # Personal Access Token required to execute the script
 variable "token" {
-  default = "<acsess-token>"
+  default = "<access-token>"
 }
 
 # doctl k8s options regions
