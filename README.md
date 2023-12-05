@@ -17,7 +17,7 @@ The goal of this test is to "containerize" a sample application and write the ne
 
 If you want to create your own application container image and push it on Docker Hub, use the following script:
 
-*Replace the "username" field in the script file with your Docker Hub username.
+*Replace the '<username>' field in the script file with your Docker Hub username.
 
 ```bash
 ./image-build.sh
@@ -32,7 +32,7 @@ Use Terraform to configure the local and remote environment of your application:
 Connect your local machine to the cloud provider:
 
 1. Download the config file from kubernetes cluster located on your cloud provider;
-2. Copy the config file to the kubernetes config directory. Replace the "config-file" in the next command with your config file name.
+2. Copy the config file to the kubernetes config directory. Replace the '<config-file>"' in the next command with your config file name.
 
 ```bash
 cp <config-file> ~/.kube/config
