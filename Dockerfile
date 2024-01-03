@@ -1,4 +1,4 @@
-FROM node:alpine3.19
+FROM node:21.5.0-alpine3.19
 
 # Create app directory
 WORKDIR /web
