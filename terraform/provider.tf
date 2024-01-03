@@ -1,12 +1,12 @@
-# Configure the DigitalOcean Provider
+# Configure the Provider
 terraform {
   required_providers {
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "~> 2.0"
+    <your-provider> = {
+      source  = "<your-provider>/<your-provider>"
+      version = "~> <your-provider-version>"
     }
   }
 }
-provider "digitalocean" {
+provider "<your-provider>" {
   token = var.do_token
 }
