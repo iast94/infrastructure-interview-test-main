@@ -49,7 +49,7 @@ Connect your local machine to the cloud provider:
 2. Copy the config file to the kubernetes config directory. Replace the "config-file" in the next command with your config file name.
 
 ```bash
-cp <config-file> ~/.kube/config
+cp "config-file" ~/.kube/config
 ```
 
 Deploy the application:
