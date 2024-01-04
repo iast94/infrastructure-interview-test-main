@@ -23,10 +23,10 @@ If you want to create your own application container image and push it on Docker
 ```
 ### Create local and cloud cluster
 Generate access token in the clouder provider
-Use this documetation for digitalocean
+Use this documetation for digitalocean:
 https://docs.digitalocean.com/reference/api/create-personal-access-token/#:~:text=To%20generate%20a%20personal%20access,the%20Generate%20New%20Token%20button
 
-Use this documetation for AWS
+Use this documetation for AWS:
 https://circleci.awsworkshop.io/ee/040_circleci_setup/43_terraform_cloud_token.html
 
 Use this command for GCP
@@ -34,6 +34,7 @@ Use this command for GCP
 gcloud auth print-access-token
 ```
 For another cloud provider you can search how to generete your acess-token.
+
 *Replace the access-token in the variables.tf with your genereted access-token.
 
 Use Terraform to configure the local and remote environment of your application:
