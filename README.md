@@ -13,6 +13,7 @@ The goal of this test is to "containerize" a sample application and write the ne
 
 ## 🚀 Installation
 
+### Image build and push to dockerhub
 If you want to create your own application container image and push it on Docker Hub, use the following script:
 
 *Replace the "username" field in the script file with your Docker Hub username.
@@ -20,6 +21,7 @@ If you want to create your own application container image and push it on Docker
 ```bash
 ./image-build.sh
 ```
+### Create local and cloud cluster
 Generate access token in the clouder provider
 Use this documetation for digitalocean
 -https://docs.digitalocean.com/reference/api/create-personal-access-token/#:~:text=To%20generate%20a%20personal%20access,the%20Generate%20New%20Token%20button
@@ -39,7 +41,7 @@ Use Terraform to configure the local and remote environment of your application:
 ```bash
 ./create-cluster.sh
 ```
-
+###  Deploy the kubernetes aplication
 Connect your local machine to the cloud provider:
 
 1. Download the config file from kubernetes cluster located on your cloud provider;
