@@ -56,7 +56,7 @@ Deploy the application:
 ```bash
 ./deploy.sh
 ```
-Run the tests scenarios:
+### Run the tests scenarios:
 
 ```bash
 ./test.sh
