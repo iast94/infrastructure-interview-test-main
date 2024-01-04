@@ -4,7 +4,7 @@ app/src/**/*.js
 app/src/**/*.js.map
 
 # Local .terraform directories
-**/.terraform/*
+terraform/**/.terraform/*
 
 # .tfstate files
 terraform/*.tfstate
