@@ -35,7 +35,7 @@ gcloud auth print-access-token
 ```
 For another cloud provider you can search how to generete your acess-token.
 
-*Replace the access-token in the variables.tf with your genereted access-token.
+*Replace the access token in the variables.tf file located in the terraform folder with your generated access token.
 
 Use Terraform to configure the local and remote environment of your application:
  
