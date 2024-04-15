@@ -1,4 +1,4 @@
-# Cloud Infrastructure Interview test
+# Cloud Infrastructure
 
 The goal of this test is to "containerize" a sample application and write the necessary code to run it in a kubernetes cluster.
 
