@@ -45,7 +45,10 @@ Use Terraform to configure the local and remote environment of your application:
 ./create-cluster.sh
 ```
 ###  Deploy the kubernetes aplication
-Connect your local machine to the cloud provider:
+To Pull an Image from a Private Registry you first need to create a Secret based on existing credentials, for do that use the follow docmuentation:
+https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+
+#### Connect your local machine to the cloud provider:
 
 1. Download the config file from kubernetes cluster located on your cloud provider;
 2. Copy the config file to the kubernetes config directory. Replace the "config-file" in the next command with your config file name.
@@ -54,7 +57,7 @@ Connect your local machine to the cloud provider:
 cp "config-file" ~/.kube/config
 ```
 
-Deploy the application:
+#### Deploy the application:
 
 ```bash
 ./deploy.sh
