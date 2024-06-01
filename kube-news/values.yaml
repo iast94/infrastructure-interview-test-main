@@ -6,6 +6,6 @@ mariadb:
     userPwd: test
     rootPwd: test
 web:
-  image: igor1945/app
+  image: <username>/<image-name>:v1
   tag: v1
   serviceType: LoadBalancer
