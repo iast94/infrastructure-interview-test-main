@@ -14,7 +14,7 @@ The goal of this test is to "containerize" a sample application and write the ne
 ## 🚀 Installation
 
 ### Image build and push to dockerhub
-To create your own application container image and push it on Docker Hub, the first step is to log in to the DockerHub registry with the following command:
+To create your own application container image and push it to Docker Hub, the first step is to create your private repository and then log in to the DockerHub registry with the following command:
 ```bash
 docker login
 ```
