@@ -14,10 +14,13 @@ The goal of this test is to "containerize" a sample application and write the ne
 ## 🚀 Installation
 
 ### Image build and push to dockerhub
-If you want to create your own application container image and push it on Docker Hub, use the following script:
-
+To create your own application container image and push it on Docker Hub, the first step is to log in to the DockerHub registry with the following command:
+```bash
+docker login
+```
 *Replace in the script file (image-build.sh) and in the values.yaml file (located inside the kube-news folder) the "username" with your Docker Hub username and the "image-name" with the name you want to provide for the image.
 
+Now you can use the following script:
 ```bash
 ./image-build.sh
 ```
