@@ -23,11 +23,15 @@ FROM node:21.5.0-alpine3.19 as final
 # Create app directory
 WORKDIR /web
 
-# copy build from previous stage
-COPY --from=builder /web/dist .
+# Copy just the dependency files and configs needed for install
 COPY ./app/package.json ./app/yarn.lock ./
 
-# Start the app
+# Install app dependencies with yarn
 RUN yarn install --production
+
+# copy build from previous stage
+COPY --from=builder /web/dist .
+
+# Start the app
 EXPOSE 3000
 CMD [ "yarn", "start" ]
