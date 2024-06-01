@@ -24,9 +24,11 @@ If you want to create your own application container image and push it on Docker
 ### Create local and cloud cluster
 #### Generate access token in the clouder provider
 Use this documetation for digitalocean:
+
 https://docs.digitalocean.com/reference/api/create-personal-access-token/#:~:text=To%20generate%20a%20personal%20access,the%20Generate%20New%20Token%20button
 
 Use this documetation for AWS:
+
 https://circleci.awsworkshop.io/ee/040_circleci_setup/43_terraform_cloud_token.html
 
 Use this command for GCP
@@ -46,7 +48,9 @@ Use Terraform to configure the local and remote environment of your application:
 ```
 ###  Deploy the kubernetes aplication
 To Pull an Image from a Private Registry you first need to create a Secret based on existing credentials, to do this use the following docmuentation:
+
 https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+
 After that, replace your dockerhub secret in the "dockerhub-secret" field in the my-secret.yaml file, located inside the kube-news/templates folder.
 
 #### Connect your local machine to the cloud provider:
