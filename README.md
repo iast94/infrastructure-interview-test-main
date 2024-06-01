@@ -16,13 +16,13 @@ The goal of this test is to "containerize" a sample application and write the ne
 ### Image build and push to dockerhub
 If you want to create your own application container image and push it on Docker Hub, use the following script:
 
-*Replace the "username" field in the script file with your Docker Hub username and "image-name" fild with name that you want to provide for the image. 
+*Replace in the script file (image-build.sh) and in the values.yaml file (located inside the kube-news folder) the "username" with your Docker Hub username and the "image name" with name you want to provide the image.
 
 ```bash
 ./image-build.sh
 ```
 ### Create local and cloud cluster
-Generate access token in the clouder provider
+#### Generate access token in the clouder provider
 Use this documetation for digitalocean:
 https://docs.digitalocean.com/reference/api/create-personal-access-token/#:~:text=To%20generate%20a%20personal%20access,the%20Generate%20New%20Token%20button
 
@@ -45,8 +45,9 @@ Use Terraform to configure the local and remote environment of your application:
 ./create-cluster.sh
 ```
 ###  Deploy the kubernetes aplication
-To Pull an Image from a Private Registry you first need to create a Secret based on existing credentials, for do that use the follow docmuentation:
+To Pull an Image from a Private Registry you first need to create a Secret based on existing credentials, to do this use the following docmuentation:
 https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+After that, replace your dockerhub secret in the "dockerhub-secret" field in the my-secret.yaml file, located inside the kube-news/templates folder.
 
 #### Connect your local machine to the cloud provider:
 
