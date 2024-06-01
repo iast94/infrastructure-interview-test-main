@@ -4,10 +4,11 @@ The goal of this test is to "containerize" a sample application and write the ne
 
 ## 🛑 Requirements
 
-- Docker
+- Docker 23.0.5+
+- kubectl	1.26.1+
 - apache2-utils package
 - Kubernetes v1.28.2+
-- Terraform 
+- Terraform 1.4.0+
 - helm
 - k3d
 
